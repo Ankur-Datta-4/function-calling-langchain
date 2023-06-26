@@ -1,22 +1,11 @@
-# langchain-ts-starter
+# Function-calling-feature
 
-Boilerplate to get started quickly with the [Langchain Typescript SDK](https://github.com/hwchase17/langchainjs).
+OpenAi has released this new function-calling feature
+which takes in text and responds with response as formatted by a schema
+alongside prompts
 
-This uses the same tsconfig and build setup as the [examples repo](https://github.com/hwchase17/langchainjs/tree/main/examples), to ensure it's in sync with the official docs.
+I've demonstrated it with lang chain.
 
-# What's included
+# How to make it better?
 
-- Typescript
-- .env file configuration
-- ESLint and Prettier for formatting
-- Turborepo to quickly run build scripts
-- `tsup` to bundle Typescript code
-- `tsx` to quickly run compiled code
-
-# How to use
-
-- Clone this repository
-- `npm install`
-- Write your code in `src`
-- `npx turbo run build lint format` to run build scripts quickly in parallel
-- `npm start` to run your program
+- Now for every field, prompt is fed carrying the input text. We can relay input in context(memory) and save tokens
